@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://github.com/Debby123/stats-preview-card-component)
-- [Live site](https://your-live-site-url.com)
+- [Live site](https://debby123.github.io/stats-preview-card-component/)
 
 ## My process
 
