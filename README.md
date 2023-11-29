@@ -46,7 +46,7 @@ Users should be able to:
 - Create an overlay on an image element.
 - How to use rem and em units.
 - @media query to make responsive web pages for dwsktop, laptop, tablets, and mobiles.
-- The difference between section and div. (Funny. 😂🤣I was going to sstyle the image but had enclosed it in a **<section>** It didn't work out fine till i changed it to div.
+- The difference between section and div. (Funny. 😂🤣I was going to style the image but had enclosed it in a section tag It didn't work out fine till i changed it to div.
 
 ### Continued development
 - More on media queries.
