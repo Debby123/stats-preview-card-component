@@ -1,0 +1,219 @@
+/*The designs were created to the following widths:
+- Mobile: 375px
+- Tablet: 768px
+-Laptop: 1024px
+- Desktop: 1440px*/
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');*/
+
+:root {
+               /*Colors*/
+               /*Primary*/
+               --primary1: hsl(233, 47%, 7%); /*- Very dark blue (main background)*/
+               --primary2: hsl(244, 38%, 16%); /*- Dark desaturated blue (card background)*/
+               --primary3: hsl(277, 64%, 61%); /*- Soft violet (accent)*/
+               /*Neutral*/
+               --neutral1 : hsl(0, 0%, 100%); /*- White (main heading, stats):*/
+               --neutral2: hsla(0, 0%, 100%, 0.75); /*- Slightly transparent white (main paragraph)*/
+               --neutral3: hsla(0, 0%, 100%, 0.6); /*- Slightly transparent white (stat headings)*/
+
+               /*Typography*/
+               /*Body
+                *Font*/
+               --font-size: 15px;
+               --font-family-inter: 'Inter', sans-serif; /*(https://fonts.google.com/specimen/Inter)*/
+               --inter-font-weight1: 400;
+               --inter-font-weight2: 700;
+               --font-family-lexend: 'Lexend Deca', sans-serif; /*(https://fonts.google.com/specimen/Lexend+Deca)*/
+               --lexend-font-weight: 400;
+}
+
+* {
+               box-sizing: border-box;
+}
+
+html {
+               font-size: 100%;
+}
+
+body {
+               background-color: var(--primary1);
+               padding: 0;
+               margin: 0;
+               width: 100%;
+               height: 100%;
+}
+
+.main {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-top: 10%;
+}
+
+section {
+               background-color: var(--primary2);
+               padding: 60px;
+               width: 550px;
+               border-radius: 5px 0px 0px 5px;
+}
+
+h1 {
+               font-family: var(--font-family-lexend);
+               color: var(--neutral1);
+               font-size: 2.1em;
+               font-weight: 700;
+               margin-top: -10px;
+}
+
+.purple {
+               color: var(--primary3);
+}
+
+p{
+               color: var(--neutral2);
+               font-family: var(--font-family-inter);
+               font-size: 1.15em;
+               line-height: 1.5em;
+               margin-top: 50px;
+}
+
+.stats {
+               color: var(--neutral3);
+               font-family: var(--font-family-inter);
+               text-transform: uppercase;
+               display: flex;
+               justify-content: space-between;
+               margin-top: 70px;
+               line-height: 1.7em;
+               font-size: 0.8em;
+               letter-spacing: 1pt ;
+}
+
+.number {
+               font-size: 1.5rem;
+               font-weight: 600;
+               color: var(--neutral1);
+               letter-spacing: 0pt;
+}
+
+.image{
+               height: 444px;
+               width: 520px;
+               background: hsla(278, 83%, 24%, 0.979);
+               border-radius: 0px 5px 5px 0px;
+}
+
+img {
+               height: 100%;
+               width: 100%;
+               margin: 0;
+               opacity: 0.4;
+               border-radius: 0px 5px 5px 0px;
+}
+
+.attribution { 
+               font-size: 11px; 
+               text-align: center; 
+               color: var(--neutral3);
+}
+
+.attribution a {
+               color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 767px) and (max-width:1024px){
+               .main {
+               margin: 10%;
+               }
+
+               .image {
+               height: 513px;
+               }
+}
+
+@media screen and (min-width: 374px) and (max-width: 768px){
+               body {
+                              padding: 40px;
+               }
+
+               .main {
+                              display: flex;
+                              flex-direction: column-reverse;
+                              margin: 0;
+                              margin-top: 10px;
+               }
+
+               .image{
+                              height: 300px;
+                              width: 100%;
+                              border-radius: 5px 5px 0px 0px;
+               }
+               
+               img {
+                              border-radius: 5px 5px 0px 0px;
+               }
+               
+               section {
+                              padding: 35px;
+                              width: 100%;
+                              border-radius: 0px 0px 5px 5px;
+                              text-align: center;
+               }
+               
+               h1 {
+                              font-size: 2.5em;
+                              font-weight: 700;
+                              margin-top: 0px;
+               }
+               
+               p{
+                              font-size: 1.4em;
+                              line-height: 1.6em;
+                              margin-top: 25px;
+               }
+               
+               .stats {
+                              height: 250px;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: space-evenly;
+                              margin-top: 25px;
+                              font-size: 0.9em;
+                              letter-spacing: 1.3pt ;
+               }
+               
+               .number {
+                              font-size: 1.5rem;
+               }
+}
+
+@media screen and (max-width: 375px){
+               body {
+                              padding: 20px;
+               }
+
+               .image{
+                              height: 250px;
+               }
+               
+               section {
+                              padding: 25px;
+               }
+               
+               h1 {
+                              font-size: 1.8em;
+                              font-weight: 600;
+               }
+               
+               p{
+                              font-size: 1em;
+               }
+
+               .stats {
+                              font-size: 0.7em;
+               }
+               
+               .number {
+                              font-size: 1.2rem;
+               }
+}
