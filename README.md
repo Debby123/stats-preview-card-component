@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/Debby123/stats-preview-card-component/blob/main/design/desktop-design.jpg)
 
 ### Links
 
