@@ -39,15 +39,16 @@ body {
                background-color: var(--primary1);
                padding: 0;
                margin: 0;
-               width: 100%;
-               height: 100%;
+               width: 100vw;
+               height: 100vh;
+               display: grid;
+               place-items: center;
 }
 
 .main {
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               margin-top: 10%;
+               display: grid;
+               place-items: center;
+               justify-items: center;
 }
 
 section {
@@ -55,6 +56,7 @@ section {
                padding: 60px;
                width: 550px;
                border-radius: 5px 0px 0px 5px;
+               height: 444px;
 }
 
 h1 {
@@ -98,7 +100,7 @@ p{
 
 .image{
                height: 444px;
-               width: 520px;
+               width: 550px;
                background: hsla(278, 83%, 24%, 0.979);
                border-radius: 0px 5px 5px 0px;
 }
@@ -124,10 +126,6 @@ img {
 @media screen and (min-width: 767px) and (max-width:1024px){
                .main {
                margin: 10%;
-               }
-
-               .image {
-               height: 513px;
                }
 }
 
